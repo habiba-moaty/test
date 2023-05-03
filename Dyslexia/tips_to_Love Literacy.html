@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dyslexia and Memory</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="style/img/logo.jpeg" rel="icon">
+  <link href="style/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <nav id="main-nav" class="subpage-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <a href="index.html"><img src="style/img/logo-01.png" alt="logo"></a>
+        </div>
+
+        <div class="responsive"><button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="Normal-index.html" class="smoothScroll">Home</a></li>
+          <li><a href="Normal-index.html#about" class="smoothScroll">About</a></li>
+          <li><a href="Normal-index.html#learndyslexia" class="smoothScroll">Learn Dyslexia</a></li>
+          <li><a href="Normal-index.html#resources" class="smoothScroll">Resources</a></li>
+          <li><a href="Normal-index.html#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <main id="main">
+
+ <!-- ======= Single page======= -->
+ <div class="main-content paddsection">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <div class="container-main single-main">
+              <div class="col-md-12">
+                <div class="block-main mb-30">
+                    <img src="style/img/spotit.png" class="image" alt="">
+                  <div class="content-main single-post padDiv">
+                    <div class="tips-txt">
+                        
+                        <h4><a>Although dyslexic children may find reading challenging, 
+                            they can still develop a love for it. We have suggestions that 
+                            can help encourage dyslexic children to enjoy reading.</a></h4>
+
+                    </div>
+
+                    <p class="mb-30"> <div class="blog-post">
+                    
+        <ul>
+            <p class="has-normal-font-size">🧠 Motivate your child to read by discovering subjects that captivate their interest and that they have a desire to gain knowledge about, or just take pleasure in for entertainment.</p> 
+            <p class="has-normal-font-size">🧠 To avoid discouraging children with dyslexia, it is important to select appropriate books. It is a misconception to assume that they must only read books at a low level. Engage with children and find out what types of books they want to read and pay close attention to their answers.</p>
+            <p class="has-normal-font-size">🧠 Encourage your child to engage in discussions about the book they are reading, and ask them to imagine themselves as one of the characters. Through these discussions and by empathizing with the characters, your child will feel more connected to the story.</p>
+            <p class="has-normal-font-size">🧠 Consider using graphic novels as a reading material option. They can be a valuable resource for individuals who have difficulty reading. The dialogue is typically brief and to the point, and the text is presented in large. In addition, the illustrations can assist in conveying the narrative.</p>
+            <p class="has-normal-font-size">🧠 It is suggested to look for books with various font types and sizes that suit their preferences. Making it easier for them to enjoy reading.</p>
+            <p class="has-normal-font-size">🧠 One way to encourage your child to enjoy reading is by reading to them yourself. As you read, immerse yourself in the story and allow your child to listen and follow along. Your enthusiasm for reading will likely inspire your child to develop a similar love of reading.</p>
+            <p class="has-normal-font-size">🧠 Use audiobooks in conjunction with physical books. This way, they can listen to the story and follow along with the text at the same time. This approach can help the child become more familiar with the connection between sounds and words on a page. Additionally, it can make the reading experience more enjoyable and less tedious when they don't feel like reading.</p>
+
+
+        <p></p>
+                   
+              </div>
+                
+                  </div>
+                </div>
+              </div>
+              
+             
+            </div>
+          </div>
+          <a href="tips_to_Support_Dyslexic _Minds.html" class="previous">&laquo; Previous</a>
+          <a href="Dyslexia-index.html" class="next">Home &raquo;</a>
+
+          
+          <a href="#" class="previous round">&#8249;</a>
+          <a href="#" class="next round">&#8250;</a>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Blog Single -->
+
+</main><!-- End #main -->
+<script type="text/javascript" src="jquery.min.js"></script>
+
+  <script type="text/javascript">
+  
+  "use strict";
+  
+  $(function(){
+  
+    var getTextNodesIn = function(el) {
+        return $(el).find(":not(iframe,script)").addBack().contents().filter(function() {
+            return this.nodeType == 3;
+        });
+    };
+  
+    // var textNodes = getTextNodesIn($("p, h1, h2, h3"));
+    var textNodes = getTextNodesIn($("*"));
+  
+  
+  
+    function isLetter(char) {
+      return /^[\d]$/.test(char);
+    }
+  
+  
+    var wordsInTextNodes = [];
+    for (var i = 0; i < textNodes.length; i++) {
+      var node = textNodes[i];
+  
+      var words = []
+  
+      var re = /\w+/g;
+      var match;
+      while ((match = re.exec(node.nodeValue)) != null) {
+  
+        var word = match[0];
+        var position = match.index;
+  
+        words.push({
+          length: word.length,
+          position: position
+        });
+      }
+  
+      wordsInTextNodes[i] = words;
+    };
+  
+  
+    function messUpWords () {
+  
+      for (var i = 0; i < textNodes.length; i++) {
+  
+        var node = textNodes[i];
+  
+        for (var j = 0; j < wordsInTextNodes[i].length; j++) {
+  
+          // Only change a tenth of the words each round.
+          if (Math.random() > 1/10) {
+  
+            continue;
+          }
+  
+          var wordMeta = wordsInTextNodes[i][j];
+  
+          var word = node.nodeValue.slice(wordMeta.position, wordMeta.position + wordMeta.length);
+          var before = node.nodeValue.slice(0, wordMeta.position);
+          var after  = node.nodeValue.slice(wordMeta.position + wordMeta.length);
+  
+          node.nodeValue = before + messUpWord(word) + after;
+        };
+      };
+    }
+  
+    function messUpWord (word) {
+  
+      if (word.length < 3) {
+  
+        return word;
+      }
+  
+      return word[0] + messUpMessyPart(word.slice(1, -1)) + word[word.length - 1];
+    }
+  
+    function messUpMessyPart (messyPart) {
+  
+      if (messyPart.length < 2) {
+  
+        return messyPart;
+      }
+  
+      var a, b;
+      while (!(a < b)) {
+  
+        a = getRandomInt(0, messyPart.length - 1);
+        b = getRandomInt(0, messyPart.length - 1);
+      }
+  
+      return messyPart.slice(0, a) + messyPart[b] + messyPart.slice(a+1, b) + messyPart[a] + messyPart.slice(b+1);
+    }
+  
+    // From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    function getRandomInt(min, max) {
+      
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+  
+  
+    setInterval(messUpWords, 50);
+  });
+  
+  
+  </script>
+  
+  </div>
+    
+    
+  </div>
+  
+  
+        </div>
+  
+      </div> <!-- /container -->
+  
+      
+  
+  
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30669465-1']);
+    _gaq.push(['_trackPageview']);
+  
+  
+  </script>
+<!-- ======= Footer ======= -->
+<div id="footer" class="text-center">
+  <div class="container">
+    <div class="socials-media text-center">
+
+      <ul class="list-unstyled">
+        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+        <li><a href="#"><i class="ion-social-tumblr"></i></a></li>
+        <li><a href="#"><i class="ion-social-dribbble"></i></a></li>
+      </ul>
+
+    </div>
+
+
+
+    <div class="credits">
+     
+      Designed by <a>Habiba Mohamed</a>
+    </div>
+
+  </div>
+</div><!-- End Footer -->
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/typed/typed.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

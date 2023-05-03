@@ -1,0 +1,1388 @@
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 2px;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  color: #4831D4;;
+  font-weight: 600;
+}
+
+h4 {
+  color: #292929;
+  font-size: 19px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 25px 0;
+  padding: 0;
+  font-size: 19px;
+  color: #000000;
+  line-height: 30px;
+}
+
+nav ul li a {
+  padding: 2px 0 0 0;
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #999999;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out 0s;
+}
+.subpage-nav {
+  display: block !important;
+}
+a {
+  color: #292929;
+  text-decoration: none !important;
+  transition: all 0.5s ease-in-out 0s;
+  
+}
+
+a:hover {
+  transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover, a:focus {
+  color: #b8a07e;
+  text-decoration: underline;
+  
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 0;
+  color: #999999;
+  font-size: 12px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 0.1em;
+  padding-left: 10px;
+  margin: 0 0 25px 0;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: #333;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+/*--------------------------------------------------------------
+    #Nav menu
+--------------------------------------------------------------*/
+nav {
+  position: fixed;
+  background: #fff;
+  z-index: 1000;
+  width: 100%;
+  display: none;
+  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.18);
+  padding-right: 5%;
+}
+
+.nav-menu {
+  float: right;
+  line-height: 32px;
+  margin-bottom: 0;
+  padding-top: 16px;
+}
+
+
+nav ul li {
+  float: left;
+  margin-right: 15px;
+  
+  font-size: 14px;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  padding: 2px 0 0 0;
+  position: relative;
+  display: block;
+  font-size: 15px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.logo {
+  float: left;
+  padding-left: 5%;
+}
+
+.logo img {
+ width: 90px;
+ height: 90px;
+}
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.responsive {
+  display: none;
+  font-size: 23px;
+}
+
+.active {
+  color: #afafaf;
+}
+
+
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
+}
+
+.col-lg-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+.col-lg-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.col-lg-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-lg-4 {
+  -ms-flex: 0 0 33%;
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+.col-lg-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+.col-lg-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-lg-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+.col-lg-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.col-lg-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.col-lg-10 {
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+.col-lg-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+.col-lg-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+/*--------------------------------------------------------------
+    #Home
+--------------------------------------------------------------*/
+#home {
+  background: url("../style/img/bg1.png") repeat scroll center center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#home .home-content {
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.home-content p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  color: #000000;
+  font-weight: 500;
+}
+
+.home-content .list-social li {
+  float: left;
+  margin-right: 20px;
+}
+
+.home-content .list-social li i {
+  color: #fff;
+  font-size: 15px;
+}
+button {
+  background-color: #4831D4;
+  color: #eee;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #ada1fc;
+}
+/*--------------------------------------------------------------
+    #About
+--------------------------------------------------------------*/
+.head-info .header-content h1 {
+  font-size: 32px;
+}
+
+#about .about-descr .p-heading {
+  font-size: 20px;
+}
+#about .about-descr .separator {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+.main-content {
+  padding-top: 140px;
+}
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.padDiv {
+  padding: 30px 20px;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+.u-margin-top-none {
+  margin-top: 0!important;
+}
+
+.content-banner {
+  display: inline;
+  background: #CCF381;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: #4831D4;
+  padding: 5px;
+  box-shadow: 15px 0 0 0 #CCF381, -15px 0 0 0 #CCF381;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  border-radius: 5px;
+  
+}
+
+.content-title-container {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+ 
+}
+
+/*--------------------------------------------------------------
+    #videos
+--------------------------------------------------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides input{
+  display: none;
+}
+
+.mySlides{
+  width: 20%;
+  transition: 2s;
+
+}
+.mySlides img{
+  width: 200px;
+  height: 200px;
+
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*--------------------------------------------------------------
+    #Learn Dyslexia
+--------------------------------------------------------------*/
+#learndyslexia {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#learndyslexia .learndyslexia-item {
+    margin-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+.text-center {
+  text-align: center ;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+}
+
+#learndyslexia .learndyslexia-item .learndyslexia-info {
+  opacity: 0;
+  position: absolute;
+  left: 80px;
+  right: 80px;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+}
+  
+  #learndyslexia .learndyslexia-item .learndyslexia-info h4 {
+    font-size: 13px;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  #learndyslexia .learndyslexia-item .learndyslexia-info p {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #learndyslexia .learndyslexia-item .learndyslexia-info .preview-link, #learndyslexia .learndyslexia-item .learndyslexia-info .details-link {
+    position: absolute;
+    right: 40px;
+    font-size: 24px;
+    top: calc(50% - 18px);
+    color: #b8a07e;
+  }
+  
+  #learndyslexia .learndyslexia-item .learndyslexia-info .preview-link:hover, #learndyslexia .learndyslexia-item .learndyslexia-info .details-link:hover {
+    color: #cab89f;
+  }
+  
+  #learndyslexia .learndyslexia-item .learndyslexia-info .details-link {
+    right: 10px;
+  }
+  
+  #learndyslexia .learndyslexia-item:hover .learndyslexia-info {
+    opacity: 1;
+    bottom: 20px;
+  }
+  
+  .blog-post h1, .blog-post h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(179,136,50,var(--tw-text-opacity));
+    margin-top: inherit;
+    }
+
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .row.learndyslexia-container {
+    width: 1350px;
+    margin: auto;
+  }
+
+.img-fluid {
+    min-width: 50%;
+    height: 400px;
+    width: 400px;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .paddsection {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  
+  .paddsections {
+    padding-top: 90px;
+    padding-bottom: 90px !important;
+  }
+
+  .container-main .block-main .content-main {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .main-content {
+    background: #f7f7f7;
+  }
+  
+  .main-content .container-main {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .main-content .container-main .block-main {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  
+  .container-main .block-main .content-main {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+
+  .padDiv {
+    padding: 30px 20px;
+  }
+  .spotit-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*--------------------------------------------------------------
+    #tips to support dyslexic mind
+--------------------------------------------------------------*/
+.tips-container {
+  overflow: hidden;
+}
+ /*--------------------------------------------------------------
+    #How to spot it
+--------------------------------------------------------------*/
+
+.spotit-container {
+  overflow: hidden;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+  width: 90px;
+}
+
+ /*--------------------------------------------------------------
+    #What is dyslexia?
+--------------------------------------------------------------*/
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ /*--------------------------------------------------------------
+    #Resources
+--------------------------------------------------------------*/
+#resources {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#resources .resources-item {
+    margin-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+.text-center {
+  text-align: center ;
+}
+
+.section-title {
+  margin-bottom: 70px;
+}
+
+.section-title h2 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+}
+
+  #resources .resources-item .resources-info {
+    opacity: 0;
+    position: absolute;
+    left: 80px;
+    right: 80px;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+  }
+  
+  .resources-txt {
+    padding: 25px 0px;
+    position: relative;
+  }
+
+  .row.resources-container {
+    width: 1350px;
+    margin: auto;
+  }
+
+  .blog-post h1, .blog-post h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(179,136,50,var(--tw-text-opacity));
+    margin-top: inherit;
+}
+
+.img-fluid {
+    min-width: 50%;
+    height: 400px;
+    width: 400px;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .paddsection {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  
+  .paddsections {
+    padding-top: 90px;
+    padding-bottom: 90px !important;
+  }
+
+  .container-main .block-main .content-main {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+  
+  .main-content {
+    background: #f7f7f7;
+  }
+  
+  .main-content .container-main {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .main-content .container-main .block-main {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  
+  .container-main .block-main .content-main {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+
+  .padDiv {
+    padding: 30px 20px;
+  }
+ 
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, 
+ .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .mb-3,
+
+  .my-3 {
+  margin-bottom: 1rem !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 50px 0 0 0;
+  background-color: white;
+  min-height: 40px;
+}
+
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+  .contact-contact {
+    margin-bottom: 30px;
+  }
+ 
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  .contact-details {
+    list-style: none;
+    margin: 0;
+    padding-left: 10%;
+  }
+  
+  textarea.form-control {
+    height: auto;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+  padding-left: 10%;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  margin-bottom: 5px;
+}
+  .contact-details li {
+    padding-bottom: 10px;
+  }
+  .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .form-group {
+    margin-bottom: 1rem;
+    
+  }
+
+  .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .php-email-form .error-message br + br {
+    margin-top: 25px;
+  }
+  
+  .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+  .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  .form-control {
+    display: block;
+    font-family: inherit;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+ /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer .socials-media {
+  width: 100%;
+}
+
+#footer .socials-media ul {
+  display: inline-block;
+  float: none;
+  margin: 0 0 20px 0;
+}
+
+#footer .socials-media ul li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#footer .socials-media ul li a {
+  font-size: 24px;
+  color: #999;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#footer .socials-media ul li a:hover {
+  color: #b8a07e;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#footer p {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.credits {
+  font-size: 13px;
+}
+
+
+/*--------------------------------------------------------------
+    @Media
+--------------------------------------------------------------*/
+/* breadcrumbs */
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+  .breadcrumbs ol {
+    display: block;
+  }
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+@media (max-width: 992px) {
+  .breadcrumbs {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Navbar */
+  nav {
+    padding: 10px 15px;
+  }
+  .nav-menu {
+    margin-top: 40px;
+    display: none;
+    float: none;
+    width: 100%;
+  }
+  .nav-menu li {
+
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f7f7f7;
+    line-height: 45px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .responsive {
+    float: right;
+    padding-top: 15px;
+    display: block;
+  }
+  /* About */
+  .head-info .header-content .cmaster h1 {
+    font-size: 32px;
+  }
+  
+  #about .about-descr .p-heading {
+    font-size: 20px;
+  }
+  #about .about-descr .separator {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  /* Learn dyslexia */
+  #learndyslexia .learndyslexia .nav li {
+    float: none;
+    margin: 20px;
+    display: inline-block;
+  }
+  /* Resources */
+  #resources .resources-block .resources-info {
+    margin-bottom: 30px;
+  }
+  /* Contact */
+  .contact-contact {
+    margin-bottom: 30px;
+  }
+  /* Footer */
+  #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
+}
+
+/** Width between 767px to 0
+ *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+ @media (max-width: 767px) {
+  /* Navbar */
+  nav {
+    padding: 20px 15px;
+  }
+  .nav-menu {
+    margin-top: 40px;
+    display: none;
+    float: none;
+    width: 100%;
+  }
+  .nav-menu li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f7f7f7;
+    line-height: 45px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .responsive {
+    float: right;
+    padding-top: 15px;
+    display: block;
+  }
+  /* About */
+  .head-info .header-content h1 {
+    font-size: 32px;
+  }
+  
+  #about .about-descr .p-heading {
+    font-size: 20px;
+  }
+  #about .about-descr .separator {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  /* Learn dyslexia */
+  #learndyslexia .learndyslexia-list .nav li {
+    float: none;
+    margin: 20px;
+    display: inline-block;
+  }
+  /* resources */
+  #resources .resources-block .resources-info {
+    margin-bottom: 30px;
+  }
+  /* Contact */
+  .contact-contact {
+    margin-bottom: 30px;
+  }
+  /* Footer */
+  #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
+}
+
+/** Width between 600px to 0
+ *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+@media (max-width: 600px) {
+  /* Navbar */
+  nav {
+    padding: 20px 15px;
+  }
+  .nav-menu {
+    margin-top: 40px;
+    display: none;
+    float: none;
+    width: 100%;
+  }
+  .nav-menu li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f7f7f7;
+    line-height: 45px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .responsive {
+    float: right;
+    padding-top: 15px;
+    display: block;
+  }
+  /* About */
+  .head-info .header-content h1 {
+    font-size: 32px;
+  }
+
+  #about .about-descr .p-heading {
+    font-size: 20px;
+  }
+  #about .about-descr .separator {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  /* learndyslexia */
+  #learndyslexia .learndyslexia-list .nav li {
+    float: none;
+    margin: 10px;
+    display: inline-block;
+  }
+  /* journal */
+  #resources .resources-block .resources-info {
+    margin-bottom: 30px;
+  }
+  /* Contact */
+  .contact-contact {
+    margin-bottom: 30px;
+  }
+  /* Footer */
+  #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
+}
+
+/** Width between 480px to 0
+ *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+@media (max-width: 480px) {
+  /* Navbar */
+  nav {
+    padding: 20px 15px;
+  }
+  .nav-menu {
+    margin-top: 40px;
+    display: none;
+    float: none;
+    width: 100%;
+  }
+  .nav-menu li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f7f7f7;
+    line-height: 45px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .responsive {
+    float: right;
+    padding-top: 15px;
+    display: block;
+  }
+  /* About */
+  .head-info .header-content h1 {
+    font-size: 32px;
+  }
+
+  #about .about-descr .p-heading {
+    font-size: 20px;
+  }
+  #about .about-descr .separator {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  /* portfolio */
+  #learndyslexa .learndyslexia-list .nav li {
+    float: none;
+    margin: 20px;
+  }
+  /*  */
+  #resources .resources-block .resources-info {
+    margin-bottom: 30px;
+  }
+  /* Contact */
+  .contact-contact {
+    margin-bottom: 30px;
+  }
+  /* Footer */
+  #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
+}
+
+/** Width between 320px to 0
+ *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+@media (max-width: 320px) {
+  /* Navbar */
+  nav {
+    padding: 20px 15px;
+  }
+  .nav-menu {
+    margin-top: 40px;
+    display: none;
+    float: none;
+    width: 100%;
+  }
+  .nav-menu li {
+    float: none;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f7f7f7;
+    line-height: 45px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .responsive {
+    float: right;
+    padding-top: 15px;
+    display: block;
+  }
+  /* About */
+  .head-info .header-content h1 {
+    font-size: 32px;
+  }
+
+  #about .about-descr .p-heading {
+    font-size: 20px;
+  }
+  #about .about-descr .separator {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  /* learn dyslexia */
+  #learndyslexia .learndyslexia-list .nav li {
+    float: none;
+    margin: 20px;
+  }
+  /* resources */
+  #resources .resources-block .resources-info {
+    margin-bottom: 30px;
+  }
+  /* Contact */
+  .contact-contact {
+    margin-bottom: 30px;
+  }
+  /* Footer */
+  #footer .socials-media ul li {
+    margin-right: 0;
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+  }
+  
+}
